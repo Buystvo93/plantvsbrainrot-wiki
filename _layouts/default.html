@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <main>
+      <aside class="sidebar">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pages/plants">Plants</a></li>
+          <li><a href="/pages/zombies">Zombies</a></li>
+          <li><a href="/pages/items">Items</a></li>
+          <li><a href="/pages/updates">Updates</a></li>
+          <li><a href="/pages/faq">FAQ</a></li>
+        </ul>
+      </aside>
+
+      <section class="content">
+        {{ content }}
+      </section>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>
